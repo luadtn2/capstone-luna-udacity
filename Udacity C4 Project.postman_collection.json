@@ -190,6 +190,41 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Get download URL",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer {{authToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{apiId}}.execute-api.us-east-1.amazonaws.com/dev/todos/4e464fba-f902-4192-8634-73b0a18ab88d/download",
+							"protocol": "https",
+							"host": [
+								"{{apiId}}",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"todos",
+								"4e464fba-f902-4192-8634-73b0a18ab88d",
+								"download"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"event": [
